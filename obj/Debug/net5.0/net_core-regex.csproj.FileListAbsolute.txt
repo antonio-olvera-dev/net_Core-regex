@@ -1,0 +1,16 @@
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\bin\Debug\net5.0\net_core-regex.exe
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\bin\Debug\net5.0\net_core-regex.deps.json
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\bin\Debug\net5.0\net_core-regex.runtimeconfig.json
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\bin\Debug\net5.0\net_core-regex.runtimeconfig.dev.json
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\bin\Debug\net5.0\net_core-regex.dll
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\bin\Debug\net5.0\ref\net_core-regex.dll
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\bin\Debug\net5.0\net_core-regex.pdb
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.csprojAssemblyReference.cache
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.AssemblyInfoInputs.cache
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.AssemblyInfo.cs
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.csproj.CoreCompileInputs.cache
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.dll
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\ref\net_core-regex.dll
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.pdb
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.genruntimeconfig.cache
