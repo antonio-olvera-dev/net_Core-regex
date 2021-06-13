@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+using net_core_regex.Models;
 
 namespace net_core_regex
 {
@@ -21,9 +18,34 @@ namespace net_core_regex
         }
 
 
+        public String Password(Mpassword mPassword)
+        {
+            string pattern = this.CreatePatternPassword(mPassword);
+            Regex regex = this.CreateRegex(pattern: pattern);
+
+            return regex.Match(Content).Value;
+        }
+
+        private String CreatePatternPassword(Mpassword mPassword)
+        {
+            string newPattern = "";
+            string startPattern = $"^[A-Za-z0-9+*]*";
+            string endtPattern = $"[A-Za-z0-9+*]{{{mPassword.Longitude.Start},{mPassword.Longitude.End}}}$";
+
+            newPattern += startPattern;
+            newPattern += mPassword.LowerCase ? "(?=.*[a-z])+" : "";
+            newPattern += mPassword.UpperCase ? "(?=.*[A-Z])+" : "";
+            newPattern += mPassword.Number ? "(?=.*[0-9])+" : "";
+            newPattern += mPassword.SpecialCharacter ? "(?=.*[+*])+" : "";
+            newPattern += endtPattern;
+
+            return newPattern;
+        }
 
 
-        public Regex CreateRegex(String pattern, RegexOptions regexOptions = RegexOptions.Multiline)
+
+
+        private Regex CreateRegex(String pattern, RegexOptions regexOptions = RegexOptions.Multiline)
         {
             return new Regex(pattern, regexOptions);
         }
