@@ -26,6 +26,15 @@ namespace net_core_regex
             return regex.Match(Content).Value;
         }
 
+        public String Email()
+        {
+            string pattern = @"^(?=[a-z0-9._]+@[a-z]+\.[a-z]{2})[a-z0-9_.@]{10,30}$";
+            Regex regex = this.CreateRegex(pattern: pattern);
+
+            return regex.Match(Content).Value;
+        }
+
+
         private String CreatePatternPassword(Mpassword mPassword)
         {
             string newPattern = "";
@@ -41,9 +50,6 @@ namespace net_core_regex
 
             return newPattern;
         }
-
-
-
 
         private Regex CreateRegex(String pattern, RegexOptions regexOptions = RegexOptions.Multiline)
         {

@@ -8,6 +8,7 @@ namespace net_core_regex
 
         private static FilterWithRegex regex_1;
         private static FilterWithRegex regex_2;
+        private static FilterWithRegex regex_3;
 
         static void Main(string[] args)
         {
@@ -20,6 +21,7 @@ namespace net_core_regex
         {
             regex_1 = new("<my-email@gmail.com>");
             regex_2 = new("MyPassword123456+*");
+            regex_3 = new("antonio_17@gmail.com");
         }
 
         private static void ShowResults()
@@ -39,6 +41,8 @@ namespace net_core_regex
                 }
 
             }));
+
+            Console.WriteLine(regex_3.Email());
         }
 
 
