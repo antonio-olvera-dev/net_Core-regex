@@ -32,6 +32,14 @@ namespace net_core_regex
             Regex regex = this.CreateRegex(pattern: pattern);
 
             return regex.Match(Content).Value;
+        }     
+
+        public String Url()
+        {
+            string pattern = @"^https?:\/\/.*$";
+            Regex regex = this.CreateRegex(pattern: pattern);
+
+            return regex.Match(Content).Value;
         }
 
 
