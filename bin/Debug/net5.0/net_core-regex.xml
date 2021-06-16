@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>net_core-regex</name>
+    </assembly>
+    <members>
+        <member name="T:net_core_regex.FilterWithRegex">
+            <summary>
+            The Class <c>FilterWithRegex</c> allows you to validate or filter the content of a String.
+            <example>
+            It is initialized as follows:
+            <code>
+            FilterWithRegex regex = new("Content to filter");
+            </code>
+            </example>
+            </summary>
+        </member>
+        <member name="F:net_core_regex.FilterWithRegex.Content">
+            <value>Contain content to filter</value>
+        </member>
+        <member name="M:net_core_regex.FilterWithRegex.#ctor(System.String)">
+            <summary>
+            Constructor of <c>FilterWithRegex</c>.
+            </summary>
+            <param name="content">Content on which you want to filter or validate</param>
+        </member>
+        <member name="M:net_core_regex.FilterWithRegex.WithinTwoValues(System.String,System.String)">
+            <summary>
+            The <c>WithinTwoValues</c> method returns the value of the content within the indicated parameters.
+            </summary>
+            <param name="start">Match start</param>
+            <param name="end">Match end</param>
+            <returns>The value of the content within the indicated parameters</returns>
+        </member>
+        <member name="M:net_core_regex.FilterWithRegex.Password(net_core_regex.Models.Mpassword)">
+             <summary>
+             The <c>Password</c> method returns the value of the content if the match is correct.
+             </summary>
+             <param name="mPassword">
+             <example>
+             It receives a series of parameters for the configuration of the regex
+             <code>
+            regex_2.Password(new Mpassword
+            {
+                UpperCase = true,
+                LowerCase = true,
+                Number = true,
+                SpecialCharacter = true,
+                Longitude = new Mlongitude
+                {
+                    Start = 6,
+                    End = 20
+                }
+            
+            }
+             </code>
+             </example>
+             </param>
+             <returns>The value of <c>Content</c> if the match is correct.</returns>
+        </member>
+        <member name="M:net_core_regex.FilterWithRegex.Email">
+            <summary>
+            The <c>Email</c> method returns the value of the content if the match is correct.
+            </summary>
+            <returns>The value of <c>Content</c> if the match is correct.</returns>
+        </member>
+        <member name="M:net_core_regex.FilterWithRegex.Url">
+            <summary>
+            The <c>Url</c> method returns the value of the content if the match is correct.
+            </summary>
+            <returns>The value of <c>Content</c> if the match is correct.</returns>
+        </member>
+        <member name="M:net_core_regex.FilterWithRegex.CreatePatternPassword(net_core_regex.Models.Mpassword)">
+            <summary>
+            <c>CreatePatternPassword</c> receives a series of parameters to create a pattern and returns it.
+            </summary>
+            <param name="mPassword">A series of parameters to create a pattern.</param>
+            <returns>Returns the custom pattern.</returns>
+        </member>
+        <member name="M:net_core_regex.FilterWithRegex.CreateRegex(System.String,System.Text.RegularExpressions.RegexOptions)">
+            <summary>
+            It receives the pattern and regex options, if it does not receive anything it takes by default <code>RegexOptions.Multiline</code>.
+            Then it returns the Regex already initialized and configured.
+            </summary>
+            <param name="pattern">A string containing the regex pattern.</param>
+            <param name="regexOptions">The regex options.</param>
+            <returns>Returns the Regex already initialized and configured.</returns>
+        </member>
+    </members>
+</doc>

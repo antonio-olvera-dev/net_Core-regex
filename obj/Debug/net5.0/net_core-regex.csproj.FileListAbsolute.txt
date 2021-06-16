@@ -14,3 +14,4 @@ C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\ref\net_core-reg
 C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.pdb
 C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.genruntimeconfig.cache
 C:\Users\toni_\OneDrive\NetCore\net_core-regex\obj\Debug\net5.0\net_core-regex.csproj.AssemblyReference.cache
+C:\Users\toni_\OneDrive\NetCore\net_core-regex\bin\Debug\net5.0\net_core-regex.xml

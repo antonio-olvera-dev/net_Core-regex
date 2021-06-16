@@ -6,4 +6,8 @@
     <RootNamespace>net_core_regex</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\toni_\OneDrive\NetCore\net_core-regex\net_core-regex.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
