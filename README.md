@@ -7,7 +7,9 @@ To see the unit tests and clone them, click on the following link:
 [Unit test](https://github.com/antonioolvera1995/net_core-regexTests)
 
 <br>
+
 When you clone the repository you can open the documentation in the path [./Documentation/html/index.html](https://github.com/antonioolvera1995/net_Core-regex/blob/master/Documentation/html/index.html)
+
 <br>
 
 ![image](./Documentation/Images/doc.png)
